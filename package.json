@@ -1,8 +1,20 @@
 {
-  "devDependencies": {
-    "typescript": "^5.3.3"
+  "name": "node-env-file-demo",
+  "version": "1.0.0",
+  "description": "Node.js example loading .env files",
+  "main": "src/csv.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
-    "@lionralfs/discogs-client": "^4.0.0"
-  }
+    "@lionralfs/discogs-client": "^4.0.0",
+    "dotenv": "10.0.0",
+    "throttled-queue": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
+  },
+  "keywords": []
 }
