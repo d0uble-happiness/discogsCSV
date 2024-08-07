@@ -4,7 +4,7 @@ import Papa from "papaparse";
 
 const db = new DiscogsClient().database();
 
-export async function fetchRelease(releaseIds: string[]): Promise<any[] | { error: string }> {
+export async function fetchRelease(releaseIds: string[]): Promise<any[]> {
 	const processedData = []
 	for (const id of releaseIds) {
 	  try {
