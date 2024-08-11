@@ -9,7 +9,7 @@ export function createSampleInputFile() {
   const createRandomArray = function () {
     const randomArray: number[] = Array(10)
       .fill(0)
-      .map(() => Math.floor(Math.random() * 16000000))
+      .map(() => Math.floor(Math.random() * 1000))
     return randomArray
   }
 
