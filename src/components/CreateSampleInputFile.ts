@@ -9,14 +9,12 @@ export function createSampleInputFile() {
   const createRandomArray = function () {
     const randomArray: number[] = Array(10)
       .fill(0)
-      .map(() => Math.floor(Math.random() * 100))
+      .map(() => Math.floor(Math.random() * 16000000))
     return randomArray
   }
 
   const createCsv = function (randomArray: any[]) {
-    console.log(randomArray)
-    const values = Object.values(randomArray).join(',')
-    randomArray.push(values)
+    Object.values(randomArray).join(',')
     return randomArray.join('\n')
   }
 
