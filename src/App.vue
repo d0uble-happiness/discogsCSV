@@ -17,10 +17,10 @@ async function setFile(file: File) {
     console.log(inputData.value)
 }
 
-async function fetchReleases(idList: string[]) {
+async function fetchReleases(releaseIds: string[]) {
     try {
         progress.value = 0
-        const data = await fetchRelease(idList, (loaded, total) => {
+        const data = await fetchRelease(releaseIds, (loaded, total) => {
             progress.value = Math.round((loaded / total) * 100)
         })
         console.log('Fetched data from Discogs', data)
