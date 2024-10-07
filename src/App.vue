@@ -48,10 +48,6 @@ watch(outputData, newValue => {
 </script>
 
 <template>
-    <!-- <div>
-        <button @click="downloadSampleInputFile">Download basic sample file</button>
-    </div> -->
-
     <div>
         <button @click="createSampleInputFile">Download randomised sample file</button>
     </div>
