@@ -58,6 +58,9 @@ watch(outputData, newValue => {
 
     <div>
         <ProgressBar :value="progress"></ProgressBar>
+    </div>
+
+    <div>
         {{ progress }}%
     </div>
 
